@@ -1,1 +1,1 @@
-((clojure-mode . ((cider-clojure-cli-global-options . "-A:dev:test"))))
+((clojure-mode . ((cider-clojure-cli-aliases . ":test"))))

@@ -5,7 +5,7 @@ defmodule PbtEx.MixProject do
     [
       app: :pbt_ex,
       version: "0.1.0",
-      elixir: "~> 1.18",
+      elixir: "~> 1.19",
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -22,7 +22,7 @@ defmodule PbtEx.MixProject do
   defp deps do
     [
       # "mix help deps" を実行して依存関係を確認する
-      {:propcheck, "~> 1.1", only: [:test, :dev]}
+      {:propcheck, "~> 1.5", only: [:test, :dev]}
     ]
   end
 end

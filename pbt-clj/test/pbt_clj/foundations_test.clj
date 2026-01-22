@@ -1,4 +1,4 @@
-(ns pbt-clj.core-test
+(ns pbt-clj.foundations-test
   (:require
    [clojure.test.check.clojure-test :as tc]
    [clojure.test.check.generators :as gen]
@@ -7,6 +7,6 @@
 (defn- boolean' [_]
   true)
 
-(tc/defspec boolean-test 100
+(tc/defspec boolean-test
   (prop/for-all [x gen/any]
     (boolean' x)))

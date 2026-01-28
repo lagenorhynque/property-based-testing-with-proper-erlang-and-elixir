@@ -31,7 +31,7 @@
 
   )
 
-(tc/defspec biggest-test
+(tc/defspec biggest-test 1000
   (prop/for-all [coll (s/gen (s/coll-of int?
                                         :min-count 1))]
     (= (apply max coll)
@@ -52,7 +52,7 @@
 (defn increments? [[head & tail]]
   (increments?* head tail))
 
-(tc/defspec range-test
+(tc/defspec range-test 1000
   (prop/for-all [start (s/gen int?)
                  len (s/gen (s/and nat-int?
                                    #(<= % 10000)))]
